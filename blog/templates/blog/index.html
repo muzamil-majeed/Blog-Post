@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    My Blog
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/post.css'%}?v=2">
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}?v=2">
+    
+{% endblock %}
+
+{% block content %}
+
+
+    <section id="welcome">
+        <header>
+            <img src="{% static 'blog/images/myprofile.png' %}" alt="The Author of This Blog is Dawood">
+            <h2>Dawood's Blog </h2>
+        </header>
+        <p>👋 Hi I am Dawood and I love to blog about Tech.</p>
+    </section>
+
+    <section id="latest-posts">
+        <h2>My Latest Thoughts</h2>
+        <ul>
+            {% for post in posts %}
+                {% include "blog/includes/post.html" %}
+            {% endfor %}
+        </ul>
+    </section>
+
+
+    <section id="about">
+        <p>What I do </p>
+        <p>
+            I Love Programming And reading Books 
+        </p>
+        <p>
+            My goal is to keep growing as a developer and
+            I am working very hard and with discipline.
+        </P>
+    </section>
+
+   
+
+{% endblock %}
