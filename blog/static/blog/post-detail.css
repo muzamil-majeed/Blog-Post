@@ -56,6 +56,25 @@ body {
   font-weight: bold;
 } 
 
+#read-later{
+  margin: 50px 0;
+}
+
+#read-later button{
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 6px 7px;
+  cursor: pointer;
+}
+
+#read-later button:hover,
+#read-later button:active{
+  background-color: white;
+  color: #642cbd;
+  font-weight: bold;
+}
+
 main {
   width: 90%;
   max-width: 90rem;

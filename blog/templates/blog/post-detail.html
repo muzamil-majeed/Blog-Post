@@ -21,9 +21,10 @@
         <h2>Your Comment is not saved</h2>
         <p>Please fix your error</p>
         <a href="#comment-form">FIX</a>
-
     </div>
     {% endif %}
+
+
     <section id="summary">
         <h2>{{post.titlle}}</h2>
 
@@ -31,6 +32,25 @@
             {% for tag in post_tag %}
                 <span class="tag">{{ tag.caption }}</span>
             {% endfor %}
+        </div>
+
+
+        <div id="read-later">
+            <form action="{% url 'read-later' %}" method="POST">
+                {% csrf_token %}
+                <input type="hidden" value="{{post.id}}" name="post_id">
+                <button>
+
+                    {% if saved_for_later %}
+                    
+                        Remove From Read Later
+                    {% else %}
+                        Read Later
+
+                    {% endif %}
+
+                </button>
+            </form>
         </div>
 
         <article>
