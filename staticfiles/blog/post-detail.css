@@ -1,0 +1,208 @@
+body {
+  background-color: #e7e7e7;
+}
+
+#main-navigation {
+  background-color: #390281;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+#summary {
+  margin: 8rem auto 3rem auto;
+  padding: 2rem;
+  width: 90%;
+  max-width: 90rem;
+  border-radius: 16px;
+  background-color: #5706c0;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  height: 22rem;
+}
+
+#summary h2 {
+  color: white;
+  font-size: 4.5rem;
+  margin-bottom: 20px;
+}
+
+#summary article {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  text-align: right;
+  color: rgb(232, 207, 207);
+}
+
+#summary article img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 12px;
+  transform: rotateZ(5deg);
+  border: 5px solid white;
+  margin-bottom: 1rem;
+}
+
+#summary address {
+  font-weight: bold;
+}
+#summary a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+#summary time {
+  font-weight: bold;
+} 
+
+#read-later{
+  margin: 50px 0;
+}
+
+#read-later button{
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 6px 7px;
+  cursor: pointer;
+}
+
+#read-later button:hover,
+#read-later button:active{
+  background-color: white;
+  color: #642cbd;
+  font-weight: bold;
+}
+
+main {
+  width: 90%;
+  max-width: 90rem;
+  margin: 3rem auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+}
+
+.tag{
+  background-color: #ebe7f1;
+  color: #3b0681;
+  padding: 10px;
+  border-radius: 13px;
+}
+
+#comment-form{
+  max-width: 500px;
+  width: 90%;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  padding: 30px;
+
+}
+#comment-form button{
+  background-color: #390281;
+  border: 1px solid #15022f;
+  padding: 8px 11px;
+  color: white;
+  border-radius: 4px;
+}
+#comment-form button:hover{
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+#comment-form button:active {
+  box-shadow: 4px 4px 9px rgba(43,55,12,1);
+}
+
+.form-control{
+  margin-bottom: 10px;
+
+}
+
+.form-control label{
+  font-weight: bold;
+  margin-bottom: 0px;
+  display: block;
+
+
+}
+input:focus,
+textarea:focus {
+    outline: none;              
+    border: 1px solid #642cbd;     
+        
+}
+
+.form-control input,
+.form-control textarea{
+  display: block;
+  font: inherit;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+#error-box{
+  margin: 100px auto 40px auto;
+  background-color: rgb(248, 216, 216);
+  padding: 15px;
+  border: rgb(250, 98, 98);
+  border-radius: 5px;
+  color: rgb(113, 4, 4);
+  max-width: 500px;
+  width: 90%;
+  border: 1px solid rgb(143, 6, 6);
+}
+
+
+#error-box a{
+  text-decoration: none;
+  background-color: rgb(200, 42, 44);
+  color: white;
+  border: red;
+  border-radius: 8px;
+  padding: 10px 20px;
+  max-width: 500px;
+  width: 90%;
+}
+
+.errorlist{
+  color: rgb(182, 3, 3);
+  list-style: none;
+  padding: 0;
+  margin-top: 2px;
+  
+}
+
+#comments{
+  max-width: 800px;
+  width: 90%;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  padding: 30px;
+ 
+}
+
+#comments ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#comments li{
+  margin-bottom: 5px;
+  border-bottom:2px solid #ccc;
+}
+#comments li:last-of-type{
+  border: none;
+}
+
+#comments h3{
+  color: #555353;
+}
